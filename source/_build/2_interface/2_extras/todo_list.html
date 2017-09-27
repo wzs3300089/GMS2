@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="keywords" content="online documentation, web online help, web help, chm2web" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="generator" content="chm2web Pro 2.85 (unicode)" />
+<title>To-Do List</title>
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+
+<link rel="stylesheet" href="../../../../files/helpindex.css" type=
+"text/css">
+<link rel="stylesheet" href="../../../../default.css" type=
+"text/css">
+
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+chmtop.c2wtopf.pageid = "_build/2_interface/2_extras/todo_list.html";
+</script>
+
+</head>
+<body><script type="text/JavaScript"> 
+if (window.name != "content") 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2F_build%2F2_interface%2F2_extras%2Ftodo_list.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2F_build%2F2_interface%2F2_extras%2Ftodo_list.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+</script>
+<!-- !chm2web! -->
+
+<script type="text/JavaScript">
+ if( typeof(chmtop.helpStyle) != 'undefined' ) { var linkNodes = document.getElementsByTagName("link");  for( var i=0; i < linkNodes.length; ++i ) { var link = linkNodes[i];    if( link.href.endsWith("default.css")) {    var style = link.href.replace("default.css", chmtop.helpStyle); document.write('<link id="newstyleLink" rel="stylesheet" href=' + style + ' type="text/css">');    break; } } } 
+</script>
+<h2>The To-Do List Editor</h2>
+
+<div class="body-scroll"><img class="center" src=
+"images/todo_list_editor.png" alt="To-Do List Editor">
+<p><br>
+</p>
+
+<p>The <b>To-Do List Editor</b> is available from the <a href=
+"../../1_overview/2_quick_start/menus/tools_menu.html">Tools</a>
+Menu in the IDE. This editor is where you can add and edit a list
+of things you need to do for your project. Initially this list is
+empty and there are only two default list "types": <i>todo</i> and
+<i>bug</i>, but you can add more types from the <a href=
+"../../1_overview/1_getting_started/preferences/prefs_todolist.html">
+To-do List Preferences</a>, and you can add list items either from
+this editor or using special comments in your object code and
+scripts. The different parts of the editor are as follows:</p>
+
+<ul>
+<li><b>Filters</b>: Here you can choose to show any number of the
+defined to-do tags, from just one up to all of them. Selecting an
+individual tag will show only those to-do list items that were
+created with that tag.</li>
+
+<li style="list-style: none"><br>
+</li>
+
+<li><b>Add New Item</b>: When you click this button you will will
+open the "Add New To-do" window. Here you can give a short
+descriptive text for the item to be added as well as select the Tag
+to assign to it. Clicking the "Add" button will add the new item to
+the list. Note that items can also be added through the script
+editor using the tags defined (this is explained further down this
+page).</li>
+
+<li style="list-style: none"><img class="center" src=
+"images/todo_list_add.png" alt="To-Do List Add">
+</li>
+
+<li><b>Preferences</b>: Clicking this will open the <a href=
+"../../1_overview/1_getting_started/preferences/prefs_todolist.html">
+To-do List Preferences</a>.</li>
+
+<li style="list-style: none"><img class="center" src=
+"images/todo_list_prefs.png" alt="To-Do List Preferences">
+</li>
+
+<li><b>Display Options</b>: The display options permit you to show
+the items list in different ways, either through sorting the item
+descriptions or through filtering the item status. Clicking on
+either the <i>Sort</i> or <i>Status</i> section headers will open
+up further options for the item list display.</li>
+
+<li style="list-style: none"><img class="center" src=
+"images/todo_list_displayoptions.png" alt=
+"To-Do List Display Options">
+</li>
+
+<li><b>Item List</b>: The item list shows a list of all comments
+that have been tagged along their current <i>state</i>. You can
+change the state of an item at any time by simply clicking on it
+and selecting one of the following states from the drop-down menu:
+
+<blockquote>
+<table style=
+"padding-left:25px;border:0px;cellspacing:10px;cellmargin:10px;border-collapse:separate;border-spacing:10px;width:100%;margin-left: auto;margin-right: auto;background:#282828;box-shadow: 0px 0px 0px #282828;">
+<tr>
+<td style="background:#282828;width:50px;border:0px"><img align=
+"middle" src="images/icon_notset.png" alt="Pencil Tool">
+</td>
+<td style="background:#282828;border:0px">The item has been added
+to the to-do list but has not been given a status.</td>
+</tr>
+
+<tr>
+<td style="background:#282828;width:50px;border:0px"><img align=
+"middle" src="images/icon_complete.png" alt="Pencil Tool">
+</td>
+<td style="background:#282828;border:0px">The item has been
+completed.</td>
+</tr>
+
+<tr>
+<td style="background:#282828;width:50px;border:0px"><img align=
+"middle" src="images/icon_inprogress.png" alt="Pencil Tool">
+</td>
+<td style="background:#282828;border:0px">The item currently in
+progress.</td>
+</tr>
+
+<tr>
+<td style="background:#282828;width:50px;border:0px"><img align=
+"middle" src="images/icon_blocked.png" alt="Pencil Tool">
+</td>
+<td style="background:#282828;border:0px">The item has been blocked
+and progress can't continue.</td>
+</tr>
+</table>
+</blockquote></li>
+</ul>
+
+<p>Note that the editor also has a <b>Search</b> field at the top
+which can be used to search through the item list for specific
+keywords or phrases.</p>
+
+<p><br>
+</p>
+
+<h2>Adding/Removing To-do Items In Code</h2>
+
+<p>You are not limited to adding to-do items to your project using
+only the editor. You can also add to-do items at specific points
+within the code using the tags that are defined in the <a href=
+"../../1_overview/1_getting_started/preferences/prefs_todolist.html">
+To-do List Preferences</a>. There are two tags predefined for you
+to use - "BUG" and "TODO" - but you can define more as you require
+them.</p>
+
+<p>Tags that have been defined for your to-do list will
+automatically be detected by <i>GameMaker Studio 2</i> whenever
+they are found within <i>comments</i> in the script editor (for
+more information on comments, see the <a href=
+"../../2_interface/1_editors/scripts.html">Script Editor</a>
+section on <b>Editing</b>).</p>
+
+<p class="code">//TODO This block needs some work<br>
+//BUG Fix the code here<br></p>
+
+<p>These will then show up in the item list like this: <img class=
+"center" src="images/todo_list_code.png" alt="To-Do List Code"></p>
+
+<p>Note that the to-do list will parse <i>all</i> comments within
+your project, in both custom scripts and in object events, so you
+should take care when defining your tags to ensure that they are
+not words that will be used commonly in the text. One way to
+prevent this is to use all capital letters when defining the tag
+and making sure that you have flagged "<b>Case Sensitive</b>" in
+the <a href=
+"../../1_overview/1_getting_started/preferences/prefs_todolist.html">
+Preferences</a> too, as illustrated by the default "TODO" and "BUG"
+tags.</p>
+
+<p>To remove an item from the To-Do List, you can select it and
+simply press <img style="vertical-align:middle" src=
+"../../images/icon_delete.png"> on the keyboard, or you can use the
+right click <img style="vertical-align:middle" src=
+"../../images/icon_rmb.png"> menu "Delete" option. <img class=
+"center" src="images/todo_rmb_menu.png" alt=
+"To-Do List RMB Menu"></p>
+
+<p>The right mouse button <img style="vertical-align:middle" src=
+"../../images/icon_rmb.png"> menu also permits you to open the
+comment for editing (you can also press "<b>f2</b>" to edit any
+selected item). Note that if you delete the to-do list comments
+from your code, then the item will also be removed from To-do List
+Editor as well, and vice-versa: if you delete an item from the list
+that was added through code, then the code comment will also be
+removed.</p>
+
+<p><br>
+</p>
+</div>
+
+<div class="footer">
+<div class="buttons">
+<div class="clear">
+<div style="float:left">Back: <a href="index.html">Tools
+Index</a></div>
+
+<div style="float:right">Next: <a href="recent_windows.html">Recent
+Windows</a></div>
+</div>
+</div>
+
+<h5>© Copyright YoYo Games Ltd. 2017 All Rights Reserved</h5>
+<script type="text/javascript">
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');   ga('create', 'UA-2711665-14', 'auto');   ga('send', 'pageview'); 
+</script>
+</div>
+
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (chmtop.c2wtopf.jstree != null)) {
+  if (chmtop.c2wtopf.FITEMS[chmtop.c2wtopf.pagenum] != chmtop.c2wtopf.pageid)
+    chmtop.c2wtopf.jstree.OpenTreeNode("source/" + chmtop.c2wtopf.pageid);
+}
+</script>
+</body>
+</html>
